@@ -29,6 +29,12 @@ impl<I> Amplify<I> {
         self.factor = factor;
     }
 
+    /// Returns the amplification factor.
+    #[inline]
+    pub fn factor(&self) -> f32 {
+        self.factor
+    }
+
     /// Returns a reference to the inner source.
     #[inline]
     pub fn inner(&self) -> &I {
